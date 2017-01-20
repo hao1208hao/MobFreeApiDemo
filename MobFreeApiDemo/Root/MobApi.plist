@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>titlesArray</key>
+	<array>
+		<string>查询手机号码归属地</string>
+		<string>身份证信息查询</string>
+		<string>银行卡信息</string>
+		<string>健康查询</string>
+		<string>查询天气</string>
+		<string>空气质量查询</string>
+		<string>手机基站查询</string>
+		<string>ip信息查询</string>
+		<string>婚姻匹配</string>
+		<string>站站查询</string>
+		<string>车次查询</string>
+		<string>历史上的今天</string>
+	</array>
+</dict>
+</plist>

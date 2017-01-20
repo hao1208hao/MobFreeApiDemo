@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QueryInfo">
+            <connections>
+                <outlet property="queryTextField" destination="em9-3s-Ub0" id="jz9-fm-5fM"/>
+                <outlet property="showInfoView" destination="Vv9-Rh-gBk" id="wyM-RJ-vi5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="em9-3s-Ub0">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VIH-yU-Y1c"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2ek-ql-2pC"/>
+                    </connections>
+                </textField>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv9-Rh-gBk">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcO-r6-YyK">
+                    <color key="backgroundColor" red="0.090196078430000007" green="0.60784313729999995" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="obn-oe-Usr"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="queryAction:" destination="-1" eventType="touchUpInside" id="Ald-5f-rtk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="em9-3s-Ub0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="1xQ-bD-YtW"/>
+                <constraint firstAttribute="trailing" secondItem="em9-3s-Ub0" secondAttribute="trailing" constant="20" id="BYc-4v-JPu"/>
+                <constraint firstItem="Vv9-Rh-gBk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JIA-Bh-qqb"/>
+                <constraint firstAttribute="trailing" secondItem="GcO-r6-YyK" secondAttribute="trailing" constant="20" id="Kae-k8-3IG"/>
+                <constraint firstItem="em9-3s-Ub0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Kv0-v0-Vds"/>
+                <constraint firstItem="Vv9-Rh-gBk" firstAttribute="top" secondItem="em9-3s-Ub0" secondAttribute="bottom" constant="40" id="MH2-UV-Djb"/>
+                <constraint firstAttribute="trailing" secondItem="Vv9-Rh-gBk" secondAttribute="trailing" constant="20" id="RXE-Dj-ep9"/>
+                <constraint firstItem="GcO-r6-YyK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Uw3-rq-eHN"/>
+                <constraint firstAttribute="bottom" secondItem="Vv9-Rh-gBk" secondAttribute="bottom" constant="100" id="fwU-6E-rJp"/>
+                <constraint firstAttribute="bottom" secondItem="GcO-r6-YyK" secondAttribute="bottom" constant="20" id="i5j-dS-NKA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
